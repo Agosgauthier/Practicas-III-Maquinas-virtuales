@@ -1,0 +1,24 @@
+name: Pipeline estilo clase
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Paso 1 - Correr (run)
+        run: echo "El proyecto corre correctamente"
+
+      - name: Paso 2 - Compilar (simulado)
+        run: echo "Compilando proyecto..."
+
+      - name: Paso 3 - Test (simulado)
+        run: echo "Tests ejecutados correctamente"
+
+      - name: Paso 4 - Lint (simulado)
+        run: echo "Código con buen formato"
+
+      - name: Paso 5 - Resultado final
+        run: echo "Pipeline completado OK"
